@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StructuralPseudoClass Seclector</title>
+
+    <style>
+        div>h1:first-child{
+            color:red;
+            background-color: black;
+            text-align: center;
+        }
+
+        div>p:last-child{
+            color: black;
+            background-color: blue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        div>h3:nth-child(2){
+            color:red;
+            background-color: black;
+            text-align: center;
+        }
+
+        div>h3:nth-child(odd){
+            color: rgb(238, 255, 0);
+            background-color:blue;
+            text-align: center;
+        }
+        div>h3:nth-child(even){
+            color: blue;
+            background-color:yellow;
+            text-align: center;
+        }
+
+        #demo>:nth-child(4){
+            color: rgb(255, 255, 255);
+            background-color: brown;
+            text-align: center;
+        }
+        
+        #demo>:nth-child(odd){
+            color:rgba(1, 26, 6, 0.705);
+            background-color:rgb(0, 255, 21);
+            text-align: center;     
+        }
+        
+        #demo>:nth-child(even){
+            color:purple;
+            background-color:bisque;
+            text-align: center; 
+        }
+        
+         /*First--type*/
+        #demo2>h3:first-of-type{
+            color: aqua;
+            background-color: black;
+            text-align: center;
+        }
+
+        
+
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    <!-- FIRST CHILD AND LAST CHILD -->
+
+    <div>
+        <h1>Hi</h1>  <!-- First priority -->
+        <p>Hello</p>
+        <h2>Vanakam</h2>
+        <h1>ThankYou</h1>
+         <p>Namasthe</p>   <!-- last priority -->
+    </div>
+
+
+    <hr>
+
+    <div>
+        <h1>To</h1>
+        <p>Welcome</p>
+        <h2>My</h2>
+        <h1>Home</h1>
+        <p>Dear</p>
+    </div>
+
+
+
+    <hr>
+    <hr>
+
+    <!-- Nth CHILD -->
+
+    <div>
+        <h3>Virat</h3>
+        <h3>M S Dhoni</h3>
+        <h3>Pandiya</h3>
+        <h3>Rohit</h3>
+        <h3>Sai</h3>
+        <h3>Patithar</h3>
+    </div>
+
+    <hr>
+
+    <!-- without tag point -->
+    <div id="demo">
+        <h2>Kathir</h2>
+        <h2>Vishor</h2>
+        <h2>Guna</h2>
+        <h2>Sathya</h2>
+        <h2>Charu</h2>
+        <h2>Nandhu</h2>
+    </div>
+
+    <hr>
+    <hr>
+
+    <div id="demo1">
+        <h3>Kamala</h3>
+        <h1>Priya</h1>
+        <h3>Dhavika</h3>
+        <p>Dharnika</p>
+        <h1>Divya</h1>
+    </div>
+
+    <hr>
+    <div id="demo2">
+        <h3>Ashok</h3>
+        <h1>Ganesh</h1>
+        <h4>Selevaraj</h4>
+        <h1>Subramani</h1>
+        <h3>Revi</h3>
+    </div>
+</body>
+</html> 

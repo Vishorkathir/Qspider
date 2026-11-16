@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #demo::first-letter{
+            color:red;
+
+        }
+        
+
+        #demo1::first-line{
+            color:yellow;
+            background-color: darkgreen;
+        }
+
+        #demo2::before{
+            content:"Good";
+            color:"red";
+        }
+
+        #demo3::after{
+            content: " To all";
+             color:red
+           }
+
+           ol>li::marker{
+            content: "😵‍💫";
+            color: red;
+           }
+           #a1::marker{
+            content: "▶️";
+            
+           }
+
+           #para::selection{
+            color:red;
+            background-color: black ;
+           }           
+
+
+    </style>
+
+</head>
+<body>
+    
+
+
+    <!-- First-letter -->
+
+    <h1 id="demo">Hello Vanakam</h1>
+
+<hr>
+
+    <!-- First-Line -->
+
+    <p id="demo1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo exercitationem et recusandae hic nam sint distinctio repellat, doloribus eveniet tempore minima ipsa? Tempore quisquam sapiente cumque ipsam sint consequatur veniam, quasi aliquam obcaecati. Odio neque, voluptatum mollitia accusamus velit </p>
+
+    <hr>
+    <!-- before -->
+
+    <h1 id="demo2">Morning</h1>
+
+    <hr>
+    <!-- after -->
+
+    <h1 id="demo3">Night</h1>
+
+    <hr>
+
+    <!-- Marker -->
+
+    <ol>
+        <li id="a1" >Hello</li>
+        <li>Vanakam</li>
+        <li>Namasthe</li>
+    </ol>
+
+    <hr>
+    <!-- selection -->
+
+    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe iure amet facere sit laborum! Voluptate ex quia, incidunt, perspiciatis rerum a animi optio repellendus, laboriosam perferendis sunt magni molestias aliquid!</p>
+
+
+
+</body>
+</html>

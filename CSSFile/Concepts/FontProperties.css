@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+#demo4::selection{
+  
+    color: rgb(255, 12, 12);
+    background-color: lightgray;
+    /* font-size: xxx-large;
+  font-family: "Dancing Script", cursive; */
+  
+
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+
+    <style>
+        [id] {
+            color: red;
+            background-color: aqua;
+        }
+
+
+        [title="fruit"] {
+            color: red
+        }
+
+
+        [title~="title"]{
+            color: rgb(0, 4, 255);
+            background-color: aqua;
+        }
+
+        [title|="veg"]{
+            color: black;
+            background-color: greenyellow;
+        }
+        [title^="name"]{
+            color: rgb(255, 0, 212);
+             background-color: blue;
+        }
+        [title$="animal"]{
+            color: rgb(81, 255, 0);
+             background-color: blue;
+        }
+        [title*="bird"]{
+            color: rgb(81, 255, 0);
+             background-color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Attributes -->
+
+    <h1 id="no1">hi</h1> <!-- -->
+    <h1 class="no2">Hello</h1>
+    <h1 title="abc">world</h1>
+    <h1 title="no3">Vanakkam</h1>
+    <h1 id="no3">Namasthe</h1> <!-- -->
+
+
+    <hr>
+    <!-- Attributes = "value" -->
+
+    <h1 title="fruit">Apple</h1>
+    <h1 title="fruit ">Banana</h1>
+    <h1 title=" fruit">Custard Apple</h1>
+    <h1 title=" fruit ">Dragon Fruit</h1>
+    <h1 title="fruits">Orange</h1>
+
+
+    <hr>
+
+    <!-- Attribute ~= "value" -->
+
+    <h1 title="title">Apple</h1>
+    <h1 title="title ">Banana</h1>
+    <h1 title=" title">Custard Apple</h1>
+    <h1 title=" title..">Dragon Fruit</h1>
+    <h1 title="titles">Orange</h1>
+
+
+    <hr>
+    <!-- Attribute |= "value" -->
+
+    <h1 title="veg">carrot</h1>
+    <h1 title="-veg">beetRoot</h1>
+    <h1 title="veg-">Tomato</h1>
+    <h1 title=" veg..">Potato</h1>
+    <h1 title="vegitable">Brinjal</h1>
+
+    <hr>
+    <!-- Attribute ^= "value" (prefix value)--> 
+
+    <h1 title="name">kathir</h1> <!-- -->
+    <h1 title=" name">vishor</h1>
+    <h1 title="name ">karthick</h1> <!-- -->
+    <h1 title=" name..">priya</h1>
+    <h1 title="name..">darnika</h1> <!-- -->
+    <h1 title="nameing">shabarish</h1> <!-- -->
+
+
+    <hr>
+    <!-- Attribute $= "value" (suffix value)--> 
+
+    <h1 title="animal">lion</h1> <!-- -->
+    <h1 title=" animal">tiger</h1>
+    <h1 title="animal ">elephant</h1> <!-- -->
+    <h1 title=" animal ">fox</h1>
+    <h1 title="animal..">dog</h1> 
+    <h1 title="animals">cat</h1> <!-- -->
+
+    <hr>
+    <!-- Attribute *= "value" ( value)--> 
+
+    <h1 title="bird">mina</h1> <!-- -->
+    <h1 id= " bird">humming bird</h1>
+    <h1 title="bird ">dove</h1> <!-- -->
+    <h1 title=" bird ">kookoo</h1>
+    <h1 title="bird..">dog</h1> 
+    <h1 title="birds">cat</h1> <!-- -->
+
+    
+
+
+
+
+</body>
+
+</html>
